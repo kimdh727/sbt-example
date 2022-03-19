@@ -27,3 +27,25 @@ sbt:sbt-example> exit
 ```sbt
 sbt:sbt-example> compile
 ```
+
+## Recompile on code change
+
+Automatically re-executed whenever one of the source files within the project is modified.
+
+Press `Enter` to exit `~compile`
+
+```sbt
+sbt:sbt-example> ~compile
+```
+
+## Getting help
+
+```sbt
+sbt:sbt-example> help
+```
+
+## Run your app
+
+```sbt
+sbt:sbt-example> run
+```
