@@ -61,3 +61,15 @@ sbt:sbt-example> session save
 ```sbt
 sbt:Hello> reload
 ```
+
+## Run tests
+
+```sbt
+sbt:Hello> test
+```
+
+## Run incremental tests continuously
+
+```sbt
+sbt:Hello> ~testQuick
+```
