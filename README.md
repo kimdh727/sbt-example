@@ -109,3 +109,15 @@ Change `build.sbt` as follows to add `JavaAppPackaging`:
 ```sbt
 sbt:Hello> dist
 ```
+
+## Dockerize your app
+
+```sbt
+sbt:Hello> Docker/publishLocal
+```
+
+## Set the version
+
+```scala
+ThisBuild / version := <version>
+```
