@@ -44,6 +44,14 @@ sbt:sbt-example> ~compile
 sbt:sbt-example> help
 ```
 
+```sbt
+sbt:sbt-example> inspect
+```
+
+```sbt
+sbt:sbt-example> inspect tree
+```
+
 ## Run your app
 
 ```sbt
@@ -120,4 +128,33 @@ sbt:Hello> Docker/publishLocal
 
 ```scala
 ThisBuild / version := <version>
+```
+
+## Switch saclaVersion temporarily
+
+```sbt
+sbt:Hello> ++2.12.14!
+```
+
+This setting will go away after `reload`.
+
+## Batch mode
+
+```sh
+sbt clean "testOnly HelloSpec"
+```
+
+## sbt new command
+
+```sh
+sbt new scala/scala-seed.g8
+```
+
+```sh
+...
+A minimal Scala project.
+
+name [Scala Seed Project]: hello
+
+Template applied in ./hello
 ```
