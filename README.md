@@ -73,3 +73,13 @@ sbt:Hello> test
 ```sbt
 sbt:Hello> ~testQuick
 ```
+
+## List all subprojects
+
+```sbt
+sbt:Hello> projects
+```
+
+## Broadcast commands
+
+Set `aggregate` so that the command `hello` is broadcast to `helloCore` too
