@@ -83,3 +83,7 @@ sbt:Hello> projects
 ## Broadcast commands
 
 Set `aggregate` so that the command `hello` is broadcast to `helloCore` too
+
+## Make dependncy
+
+Use `dependsOn(...)` to add a dependency on other subprojects.
