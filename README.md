@@ -87,3 +87,25 @@ Set `aggregate` so that the command `hello` is broadcast to `helloCore` too
 ## Make dependncy
 
 Use `dependsOn(...)` to add a dependency on other subprojects.
+
+## Add sbt-native-packager plugin
+
+Create `project/plugins.sbt`:
+
+```scala
+addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.3.4")
+```
+
+Change `build.sbt` as follows to add `JavaAppPackaging`:
+
+```scala
+...
+.enablePlugins(JavaAppPackaging)
+...
+```
+
+## Create a .zip dustribution
+
+```sbt
+sbt:Hello> dist
+```
