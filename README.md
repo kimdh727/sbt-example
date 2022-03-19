@@ -49,3 +49,15 @@ sbt:sbt-example> help
 ```sbt
 sbt:sbt-example> run
 ```
+
+## Save the session to build.sbt
+
+```sbt
+sbt:sbt-example> session save
+```
+
+## Reload the build
+
+```sbt
+sbt:Hello> reload
+```
